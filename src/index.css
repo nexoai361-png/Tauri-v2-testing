@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Material Symbols Icon Helper */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+/* CodeMirror 6 Full Height & Monospace Styling */
+.cm-editor {
+  height: 100% !important;
+  width: 100% !important;
+  font-family: 'Consolas', 'Fira Code', 'Cascadia Code', 'Monaco', 'Courier New', monospace !important;
+  outline: none !important;
+  position: relative !important;
+  background-color: #1e1e1e !important;
+}
+
+.cm-scroller {
+  overflow: auto !important;
+  font-family: inherit !important;
+}
+
+/* MOBILE NATIVE WHITE CURSOR */
+.cm-content {
+  -webkit-touch-callout: none !important;
+  caret-color: #ffffff !important;
+}
+
+.cm-cursor,
+.cm-dropCursor {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  border-left: 2px solid #ffffff !important;
+  margin-left: -1px;
+}
+
+/* CODE MIRROR 6 GUTTERS UI STYLING (Line Numbers & Folding) */
+.cm-gutters {
+  background-color: #181818 !important;
+  color: #858585 !important;
+  border-right: 1px solid #282828 !important;
+  font-family: 'Consolas', 'Fira Code', 'Cascadia Code', monospace !important;
+  font-size: 13px !important;
+  min-height: 100% !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  z-index: 5 !important;
+}
+
+.cm-lineNumbers .cm-gutterElement {
+  padding: 0 10px 0 8px !important;
+  min-width: 36px !important;
+  text-align: right !important;
+  cursor: pointer !important;
+  color: #858585 !important;
+  transition: color 0.15s ease;
+}
+
+.cm-lineNumbers .cm-gutterElement:hover {
+  color: #ffffff !important;
+}
+
+.cm-activeLineGutter {
+  background-color: #252526 !important;
+  color: #007acc !important;
+  font-weight: bold !important;
+}
+
+/* Code Folding Gutter */
+.cm-foldGutter {
+  width: 16px !important;
+  cursor: pointer !important;
+}
+
+.cm-foldGutter .cm-gutterElement {
+  color: #858585 !important;
+  padding: 0 2px !important;
+  text-align: center !important;
+}
+
+.cm-foldGutter .cm-gutterElement:hover {
+  color: #007acc !important;
+}
+
+/* CUSTOM SOLID SELECTION BACKGROUND (VS Code #264f78) */
+.cm-selectionBackground,
+.cm-focused .cm-selectionBackground {
+  background-color: #264f78 !important;
+  border-radius: 0px !important;
+}
+
+.cm-selectionMatch {
+  background-color: rgba(38, 79, 120, 0.5) !important;
+}
+
+/* CodeMirror 6 Search Panel Overrides */
+.cm-panel.cm-search {
+  background-color: #252526 !important;
+  color: #cccccc !important;
+  border-bottom: 1px solid #007acc !important;
+  padding: 6px 10px !important;
+  font-family: monospace !important;
+}
+
+.cm-panel.cm-search input {
+  background-color: #3c3c3c !important;
+  color: #ffffff !important;
+  border: 1px solid #3c3c3c !important;
+  padding: 3px 6px !important;
+  font-family: monospace !important;
+  border-radius: 0px !important;
+}
+
+.cm-panel.cm-search input:focus {
+  border-color: #007acc !important;
+  outline: none !important;
+}
+
+.cm-panel.cm-search button {
+  background-color: #0e639c !important;
+  color: #ffffff !important;
+  border: none !important;
+  padding: 3px 8px !important;
+  margin-left: 4px !important;
+  cursor: pointer !important;
+  font-size: 11px !important;
+  border-radius: 0px !important;
+}
+
+.cm-panel.cm-search button:hover {
+  background-color: #1177bb !important;
+}

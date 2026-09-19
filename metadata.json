@@ -1,0 +1,6 @@
+{
+  "name": "CodeMirror 6 Editor",
+  "description": "A minimalist, high-density CodeMirror 6 code editor built with SolidJS.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
